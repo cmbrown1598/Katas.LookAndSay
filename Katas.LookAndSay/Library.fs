@@ -47,3 +47,6 @@ module LookAndSay =
             let r = iterate first nth
             String.length r
 
+type LookAndSayGenerator() = 
+    member this.GenerateLookAndSay(str, nth) = 
+        LookAndSay.generateLookAndSay str nth
